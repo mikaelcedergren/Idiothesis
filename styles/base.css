@@ -39,30 +39,36 @@ a {
     margin-top: 10%;
     width: 300px;
     flex: 1;
+    font-size: 0.8rem;
     text-align: right;
-    padding: 0 3rem; }
+    padding: 0 3rem;
+    color: #aaa; }
+    .wrapper .header img {
+      display: inline-block;
+      max-width: 180px;
+      margin-bottom: 2rem; }
   .wrapper .content {
     flex: 1;
     padding-left: 300px; }
     .wrapper .content .item {
       position: relative;
-      margin-bottom: 6rem; }
+      margin-bottom: 6rem;
+      overflow-x: hidden; }
       .wrapper .content .item:hover img + h3 {
-        opacity: 1; }
+        right: 0; }
       .wrapper .content .item img {
         max-width: 100%; }
         .wrapper .content .item img + h3 {
           font-family: 'Lato';
-          transition: opacity 0.5s 1s ease;
-          opacity: 0;
+          transition: right 0.5s 0.2s cubic-bezier(0, 0.6, 0, 1);
           position: absolute;
           top: 0;
           font-style: normal;
-          right: 0;
+          right: -100%;
           display: inline-block;
           background-color: #fff;
           color: #000;
           font-size: 1rem;
-          padding: 1rem 1.5rem;
+          padding: 0.5rem 1rem;
           line-height: 1;
           margin: 0; }
