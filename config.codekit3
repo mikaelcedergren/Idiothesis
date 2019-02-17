@@ -68,6 +68,13 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0
+		},
 	"/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -139,7 +146,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 555155234,
-	"displayValue": "idiothesis",
+	"displayValue": "mikaelcedergren.com",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
 	"iconImageWasSetByUser": 0

@@ -1,1 +1,1 @@
-# idiothesis
+# mikaelcedergren.com
