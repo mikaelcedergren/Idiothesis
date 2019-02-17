@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
 html,
 body {
   font-size: 15px;
@@ -15,8 +17,7 @@ h2,
 h3,
 h4,
 strong,
-p,
-a {
+p {
   font-family: "Playfair Display";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,16 +25,34 @@ a {
   font-style: italic;
   line-height: 1.5; }
 
+p {
+  margin: 0 0 2rem 0; }
+
 a {
+  transition: all 0.3s ease;
+  font-family: "Lato";
+  font-style: normal;
   text-decoration: none;
-  font-weight: 600;
-  color: #1A8022; }
+  color: #131B17;
+  font-size: 0.7rem;
+  text-rendering: optimizeLegibility;
+  border-radius: 300px;
+  border: 1px solid rgba(19, 27, 23, 0.1);
+  padding: 5px 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem; }
+  a:hover {
+    background-color: #131B17;
+    color: #fff; }
 
 .wrapper {
   max-width: 900px;
   margin: 3rem auto;
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 768px) {
+    .wrapper {
+      margin: 0 auto; } }
   .wrapper .header {
     position: fixed;
     margin-top: 10%;
@@ -42,7 +61,14 @@ a {
     font-size: 0.8rem;
     text-align: right;
     padding: 0 3rem;
-    color: #aaa; }
+    color: #aaa;
+    font-family: "Lato";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    @media (max-width: 768px) {
+      .wrapper .header {
+        display: none; } }
     .wrapper .header img {
       display: inline-block;
       max-width: 180px;
@@ -50,25 +76,28 @@ a {
   .wrapper .content {
     flex: 1;
     padding-left: 300px; }
+    @media (max-width: 768px) {
+      .wrapper .content {
+        padding: 1rem; } }
     .wrapper .content .item {
       position: relative;
-      margin-bottom: 6rem;
-      overflow-x: hidden; }
-      .wrapper .content .item:hover img + h3 {
-        right: 0; }
+      margin-bottom: 6rem; }
       .wrapper .content .item img {
-        max-width: 100%; }
+        max-width: 100%;
+        margin-bottom: 1rem; }
         .wrapper .content .item img + h3 {
-          font-family: 'Lato';
-          transition: right 0.5s 0.2s cubic-bezier(0, 0.6, 0, 1);
+          font-family: "Lato";
+          font-weight: normal;
           position: absolute;
           top: 0;
           font-style: normal;
-          right: -100%;
+          right: 0;
           display: inline-block;
           background-color: #fff;
-          color: #000;
-          font-size: 1rem;
-          padding: 0.5rem 1rem;
+          color: #131B17;
+          font-size: 0.8rem;
+          padding: 0.5rem;
           line-height: 1;
-          margin: 0; }
+          margin: 0;
+          text-transform: uppercase;
+          letter-spacing: 0.08rem; }
