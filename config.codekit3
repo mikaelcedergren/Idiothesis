@@ -33,6 +33,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/the-raven.jpg": {
+		"ft": 16384,
+		"iS": 209084,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/the-raven.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -95,6 +106,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/styles/normalize-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/styles/variables.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/styles/variables-min.css",
 		"oF": 0,
 		"oS": 3
 		},

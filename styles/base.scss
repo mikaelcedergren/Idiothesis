@@ -4,6 +4,7 @@ html,
 body {
     font-size: 15px;
     font-family: "Playfair Display";
+    background-color: $white;
 }
 
 * {
@@ -19,14 +20,20 @@ h2,
 h3,
 h4,
 strong,
-p {
+p,
+a {
+    font-family: "Playfair Display";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-style: italic;
+    line-height: 1.5;
 }
 
-h1 {
-    font-style: italic;
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: $primary;
 }
 
 .wrapper {
@@ -50,10 +57,10 @@ h1 {
 
         .item {
             position: relative;
-            margin-bottom: 3rem;
+            margin-bottom: 6rem;
 
             &:hover {
-                img + h3 {
+                img+h3 {
                     opacity: 1;
                 }
             }
@@ -61,18 +68,20 @@ h1 {
             img {
                 max-width: 100%;
 
-                & + h3 {
+                &+h3 {
                     font-family: 'Lato';
-                    transition: opacity 0.5s ease;
+                    transition: opacity 0.5s 1s ease;
                     opacity: 0;
                     position: absolute;
-                    top: 1rem;
-                    left: 1rem;
+                    top: 0;
+                    font-style: normal;
+                    right: 0;
                     display: inline-block;
-                    background-color: $black;
-                    color: $white;
+                    background-color: $white;
+                    color: $black;
                     font-size: 1rem;
-                    padding: 3px 5px;
+                    padding: 1rem 1.5rem;
+                    line-height: 1;
                     margin: 0;
                 }
             }
